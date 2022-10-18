@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/ninja_test.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/test_level_2.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Environment" id=1]
+
+[node name="Spatial" type="WorldEnvironment"]
+environment = SubResource( 1 )
+
+[node name="ninja_test" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -0.922519, 0.013729, -7.48664 )
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 0.997193, 0.0529439, 0.0529439, 0, -0.707107, 0.707107, 0.074874, -0.705122, -0.705122, -3.17878, 12.037, -16.9079 )
+light_bake_mode = 2
+shadow_enabled = true
+shadow_contact = 0.5
+directional_shadow_normal_bias = 0.0
+
+[node name="test_level_2" parent="." instance=ExtResource( 3 )]
