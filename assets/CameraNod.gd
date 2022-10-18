@@ -17,8 +17,6 @@ func _ready():
 #	pass
 
 func _input(event):
-#    if event.is_action_pressed("LMB"):
-#        print_debug("EVENT")
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		rotate_cam(event)
 
