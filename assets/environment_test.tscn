@@ -13,16 +13,17 @@
 environment = SubResource( 1 )
 
 [node name="ninja_test" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -2.62269e-07, 0, 1, 0, 2.62269e-07, 0, -1, 0.762362, 0.013729, -4.42774 )
+transform = Transform( 1, 0, 3.49692e-07, 0, 1, 0, -3.49692e-07, 0, 1, 0.762362, 0.013729, 11.7702 )
 
 [node name="DirectionalLight2" type="DirectionalLight" parent="."]
-transform = Transform( 0.997193, 0.0529439, 0.0529439, 0, -0.707107, 0.707107, 0.074874, -0.705122, -0.705122, -3.17878, 12.037, -16.9079 )
+transform = Transform( 0.997193, 0.0529439, 0.0529439, -0.0286084, -0.384038, 0.922874, 0.0691931, -0.921798, -0.381446, -3.17878, 12.037, -16.9079 )
 light_bake_mode = 2
 shadow_enabled = true
 shadow_contact = 0.5
 directional_shadow_normal_bias = 0.0
 
 [node name="test_level_2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1.65185, 0, 0, 0, 0.831465, 0, 0, 0, 1.65185, 0, 0, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -2, 2, 0 )
