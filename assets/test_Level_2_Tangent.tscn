@@ -28,9 +28,8 @@ transform = Transform( 15, 0, 0, 0, 0.1, 0, 0, 0, 15, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="Cube"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Cube/StaticBody"]
-shape = SubResource( 3 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 15, 0, 0, 0, 0.1, 0, 0, 0, 15, 0, 0, 0 )
+shape = SubResource( 3 )

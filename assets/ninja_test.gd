@@ -36,7 +36,7 @@ func _physics_process(delta):
     movement.z =  int(Input.is_action_pressed("move_back")) - int(Input.is_action_pressed("move_forward"))
     movement.x =  int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
     
-    movement = movement.rotated(Vector3.UP, spring_arm.rotation.y).normalized
+    movement = movement.rotated(Vector3.UP, spring_arm.rotation.y).normalized()
     
     _velocity.x = movement.x * speed
     _velocity.z = movement.y * speed
